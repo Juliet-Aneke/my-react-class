@@ -3,6 +3,9 @@ import ProductList from "./components/ProductList";
 import ProductCard from "./components/ProductCard";
 import WelcomeBanner from "./components/WelcomeBanner";
 import CostList from "./components/CostList";
+import TaskList from "./components/TaskList";
+import SalaryList from "./components/SalaryList";
+
 
  function App(){
   return(
@@ -21,6 +24,9 @@ import CostList from "./components/CostList";
     <WelcomeBanner />
 
     <CostList />
+    <TaskList />
+    <SalaryList />
+  
     </>
     
   );
