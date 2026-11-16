@@ -1,3 +1,5 @@
+import Container from "./components/Container";
+import SayHello from "./components/SayHello";
 import Welcome from "./components/Welcome";
 import ProductList from "./components/ProductList";
 import ProductCard from "./components/ProductCard";
@@ -7,27 +9,33 @@ import TaskList from "./components/TaskList";
 import SalaryList from "./components/SalaryList";
 
 
- function App(){
+
+ function App() {
   return(
     <>
-    <Welcome />
-    <Welcome />
-    <div className="flex flex-col items-center w-full border">
+
+    <Container>
+      <SayHello />
+      <Welcome />
+      <Welcome />
+      <div className="flex flex-col items-center w-full border">
     <h2 className="font-bold text-5xl"> Our Products </h2>
     <ProductList/>
-    </div>
-    <div>
+      </div>
+
+      <div>
       <h1> Main Products </h1>
-    </div>
-    <ProductCard/>
+      </div>
+      <ProductCard/>
 
-    <WelcomeBanner />
+      <WelcomeBanner />
+      <CostList />
+      <TaskList />
+      <SalaryList />
 
-    <CostList />
-    <TaskList />
-    <SalaryList />
-  
-    </>
+    </Container>
+
+  </>
     
   );
 }
