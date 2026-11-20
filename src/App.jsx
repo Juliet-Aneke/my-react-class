@@ -7,6 +7,12 @@ import WelcomeBanner from "./components/WelcomeBanner";
 import CostList from "./components/CostList";
 import TaskList from "./components/TaskList";
 import SalaryList from "./components/SalaryList";
+import Counter from "./components/Counter";
+import PasswordInput from "./components/PasswordInput";
+import LightSwitch from "./components/LightSwitch";
+import ContactForm from "./components/ContactForm";
+import WelcomeMessage from "./components/WelcomeMessage";
+import AddTwo from "./components/AddTwo";
 
 
 
@@ -27,11 +33,16 @@ import SalaryList from "./components/SalaryList";
       <h1> Main Products </h1>
       </div>
       <ProductCard/>
-
+      <AddTwo />
       <WelcomeBanner />
       <CostList />
       <TaskList />
       <SalaryList />
+      <Counter />
+      <WelcomeMessage />
+      <ContactForm />
+      <PasswordInput />
+      <LightSwitch />
 
     </Container>
 
